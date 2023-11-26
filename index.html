@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Checkout</title>
+    <link rel="icon" type="image/x-icon" href="images/blindful-img.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="helper.css">
+    <link rel="stylesheet" href="mediquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Merriweather+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fs-32 text_center text_darkgrey">Like this? You'll love these</h2>
+            <div id="cards_desktop" class="row  p-2 justify-content-center card_column gap-3">
+                <div class=" card  shadow-light h-100">
+                    <div class="card-body">
+                        <div class="text_center">
+                            <img src="images/syrup.png" class="img-fluid" alt="">
+                        </div>
+                        <p class="border_bottom mb-0"></p>
+                        <div class="d-flex gap-2 align-items-center justify-content-between">
+                            <p class="fs-12 mt-2 text_lightgrey">500ml,250ml</p>
+                            <p class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                    fill="currentColor" class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="fs-13 text_lightgrey">(24)</span>
+                            </p>
+                        </div>
+                        <p class="fs-16 text_navy mt-0 fw-600 mb-0">This Item: <span class="text_grey">Holistic
+                                Hair</span></p>
+                        <p class="fs-16 text_grey mt-0">Sensitive Conditioner</p>
+                        <select class="text_grey w-100 fs-16 mb-2" id="dropdown">
+
+                            <option value="option1" selected>Select Option</option>
+                            <option class="d-flex justify-content-between" value="option2">250ml
+                            </option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                        <button onclick="openModal()" class="btn btn_cart mb-2 w-100 fs-16 text-white">Added To
+                            Cart</button>
+                        <div class="bonus_text text_center">
+                            <span class="text-white fs-13 ">Bonus</span>
+                        </div>
+                        <div class="blindfull_img">
+                            <img src="images/blindful-img.png" alt="Icon" class="img-fluid">
+                        </div>
+                        <div class="new_label bg-grey">
+                            <span class="fs-12 text-white">NEW</span>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="product-check">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 plus_card col-lg-1 d-flex align-items-center">
+                    <p class="fs-40 text_navy ">+</p>
+                </div>
+                <div class=" card  shadow-light h-100">
+                    <div class="card-body">
+                        <div class="text_center">
+                            <img src="images/syrup.png" class="img-fluid" alt="">
+                        </div>
+                        <p class="border_bottom mb-0"></p>
+                        <div class="d-flex gap-2 align-items-center justify-content-between">
+                            <p class="fs-12 mt-2 text_lightgrey">500ml,250ml</p>
+                            <p class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                    fill="currentColor" class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="fs-13 text_lightgrey">(24)</span>
+                            </p>
+                        </div>
+                        <p class="text_grey fs-16  mt-0 fw-600 mb-0">Holistic
+                            Hair</p>
+                        <p class="fs-16 text_grey mt-0">Sensitive Shampoo</p>
+                        <select class="text_grey w-100 fs-16 mb-2" id="dropdown">
+
+                            <option value="option1" selected>Select Option</option>
+                            <option class="d-flex justify-content-between" value="option2">250ml
+                            </option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                        <button onclick="openModal()" class="btn btn_update mb-2 w-100 fs-16 text-white">Add To
+                            Cart</button>
+
+                        <div class="blindfull_img">
+                            <img src="images/blindful-img.png" alt="Icon" class="img-fluid">
+                        </div>
+                        <div class="newshampoo_label bg-grey">
+                            <span class="fs-12 text-white">NEW</span>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="product-check">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" card  shadow-light h-100">
+                    <div class="card-body">
+                        <div class="text_center">
+                            <img src="images/aotearoad.png" class="img-fluid" alt="Aotearoad">
+                        </div>
+                        <p class="border_bottom mb-0"></p>
+                        <div class="d-flex gap-2 align-items-center justify-content-between">
+                            <p class="fs-12 mt-2 text_lightgrey">65gm</p>
+                            <p class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                    fill="currentColor" class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="fs-13 text_lightgrey">(24)</span>
+                            </p>
+                        </div>
+                        <p class="text_grey fs-16  mt-0 fw-600 mb-0">AOTEAROAD</p>
+                        <p class="fs-16 text_grey mb-2 mt-0">Natural Hold Hair Clay</p>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+
+                            <h3 class="fs-13 mt-1 mb-2 sale_text text_center text-white">
+                                Sale </h3>
+                            <h3 class="text_lightgrey mt-1 mb-2 fs-14">RRP <s>$40.99</s></h3>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-0">
+                            <h3 class="text_gold mt-1 mb-2 fs-16">NZ$23.90</h3>
+
+
+                            <h3 class="text_lightgrey mt-1 mb-2 fs-14">Save(15%)</h3>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="product-check">
+
+                        </div>
+                        <button onclick="openModal()" class="btn btn_update mb-2 w-100 fs-16 text-white">Add To
+                            Cart</button>
+                    </div>
+                </div>
+                <div class="card cards_minwidth bg_navy shadow-light h-100">
+
+                    <div class="card-body d-flex align-items-center justify-content-center">
+
+                        <div class="">
+                            <p class="fs-22 mb-2  text-white">Total Price: </p>
+                            <p class="fs-22 mt-0  text-white">NZ$35.90</p>
+                        </div>
+
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="product-check">
+
+                    </div>
+                    <div class="p-3">
+                        <button onclick="openModal()" class="btn btn_secondary mb-2 w-100 fs-16 text_navy">Make Them
+                            Yours</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- desktop ends -->
+            <!-- mobile screen starts -->
+
+            <div id="cards_mobile">
+                <div class="card h-100 shadow-sm border-lightgrey">
+                    <div class="card-body">
+                        <div class="">
+                            <div class="d-flex justify-content-between gap-2">
+                                <div>
+                                    <img src="images/bottle-m.png"  alt="Bottle" class="img-fluid">
+                                </div>
+                                <div>
+                                    <div class="d-flex gap-4 align-items-baseline">
+                                        <p class="fs-12 mt-2 mb-1 text_lightgrey">500ml,250ml</p>
+                                        <p class="mt-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="fs-12 text_lightgrey">(24)</span>
+                                        </p>
+                                    </div>
+                                    <p class="fs-13 text_navy mt-0 fw-600 mb-0">This Item: <span
+                                            class="text_grey">Holistic
+                                            Hair</span></p>
+                                    <p class="fs-13 text_grey mt-0">Sensitive Conditioner</p>
+                                    <select class="text_grey w-100 fs-16 mb-2" id="dropdown">
+
+                                        <option value="option1" selected>Select Option</option>
+                                        <option class="d-flex justify-content-between" value="option2">250ml
+                                        </option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <button onclick="togglePopup()"
+                                        class="btn btn_cart mb-2 w-100 fs-16 text-white">Added
+                                        To
+                                        Cart</button>
+                                </div>
+                            </div>
+                            <div class="bonus_text text_center">
+                                <span class="text-white fs-10 ">Bonus</span>
+                            </div>
+
+                            <div class="new_label bg-grey">
+                                <span class="fs-10 text-white">NEW</span>
+                            </div>
+                        </div>
+                        <div class=" position-relative">
+                            <p class="fs-40 text_center mt-2 mb-2 text_navy ">+</p>
+
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between gap-2">
+                                <div>
+
+                                    <img src="images/bottle-m.png"  alt="Bottle" class="img-fluid">
+                                </div>
+                                <div>
+                                    <div class="d-flex gap-4 align-items-baseline">
+                                        <p class="fs-12 mt-2 mb-1 text_lightgrey">500ml,250ml</p>
+                                        <p class="mt-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="fs-12 text_lightgrey">(24)</span>
+                                        </p>
+                                    </div>
+                                    <p class="fs-13 text_navy mt-0 fw-600 mb-0">This Item: <span
+                                            class="text_grey">Holistic
+                                            Hair</span></p>
+                                    <p class="fs-13 text_grey mt-0">Sensitive Conditioner</p>
+                                    <select class="text_grey w-100 fs-16 mb-2" id="dropdown">
+
+                                        <option value="option1" selected>Select Option</option>
+                                        <option class="d-flex justify-content-between" value="option2">250ml
+                                        </option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <button onclick="togglePopup()"
+                                        class="btn btn_update mb-2 w-100 fs-16 text-white">Add
+                                        To
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <div class="d-flex justify-content-between gap-2">
+                                <div>
+                                    <img src="images/aotearoad-m.png"  alt="Hair Clay" class="img-fluid">
+                                </div>
+                                <div>
+                                    <div class="d-flex gap-4 align-items-baseline">
+                                        <p class="fs-12 mt-2 mb-1 text_lightgrey">500ml,250ml</p>
+                                        <p class="mt-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star-fill text_gold"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="fs-12 text_lightgrey">(24)</span>
+                                        </p>
+                                    </div>
+                                    <p class="fs-13 text_navy mt-0 fw-600 mb-0">This Item: <span
+                                            class="text_grey">Natural Hold Hair Clay</span></p>
+                                    <p class="fs-13 text_grey mt-0">Sensitive Conditioner</p>
+                                    <select class="text_grey w-100 fs-16 mb-2" id="dropdown">
+
+                                        <option value="option1" selected>Select Option</option>
+                                        <option class="d-flex justify-content-between" value="option2">250ml
+                                        </option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <button onclick="togglePopup()"
+                                        class="btn btn_update mb-2 w-100 fs-16 text-white">Add
+                                        To
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bg_navy text_center">
+                        <h3 class="text-white fs-16 fw-600 mb-2">Bundle Total</h3>
+                        <h3 class="text-white mb-2 fs-16 fw-600 ">NZ$58.90</h3>
+                        <div class="p-3">
+                            <button onclick="togglePopup()" class="btn btn_secondary mb-2 w-100 fs-14 text_navy">Make
+                                Them Yours</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- modal popup onclick desktop -->
+
+    <section id="cards_desktop">
+        <div class="container">
+            <div id="myModal" class="modal-container">
+
+                <div class="modal-content br-0">
+                    <div class="d-flex justify-content-between">
+
+                        <p class="fs-16 text_grey mt-0 fw-600 mb-0">Holistic
+                            Hair </p>
+
+
+
+                        <button class="btn close-btn  fs-24 mb-0 mt-0 text-end" onclick="closeModal()">&times;</button>
+
+                    </div>
+                    <p class="fs-22 mt-0 mb-0">Sensitive Conditioner</p>
+                    <p class="mt-0"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-star text_gold" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <span class="fs-13 text_navy"><u>24 Reviews</u></span>
+                    </p>
+                    <div>
+                        <span class="fs-16 mr_3 border_bottom-navy d-inline-block fw-600 text_navy">Overview</span>
+                        <span class="fs-16 mr_5 d-inline-block fw-600 text_navy">Description</span>
+                        <span class="fs-16 text_navy d-inline-block fw-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square fs-14"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                            </svg> &nbsp; Open In New tab</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="popupCards">
+                            <div class="card shadow-sm border-lightgrey h-100">
+                                <div class="card-body">
+                                    <div class="text_center">
+                                        <img src="images/syrup.png" alt="syrup" class="img-fluid">
+                                    </div>
+                                    <div class="bottle_img">
+                                        <div>
+                                            <img src="images/bottle.png" alt="bottle" class="img-fluid border-navy">
+                                        </div>
+                                        <div class="mt-2">
+                                            <img src="images/bottle.png" alt="bottle" class="img-fluid">
+                                        </div>
+
+                                    </div>
+                                    <div class="blindfull_img">
+                                        <img src="images/blindful-img.png" alt="Icon" class="img-fluid">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card shadow-sm border-lightgrey h-100">
+                                <div class="card-body">
+                                    <p class="fs-12 mb-1 text_lightgrey">Select an Option</p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="d-flex justify-content-between shadow_dark p_1 mt-0">
+                                                <h3 class="fs-13 mt-1 mb-1 text_silver">
+                                                    250ml </h3>
+                                                <h3 class="text_gold mt-1 mb-1 fs-13">NZ$23.9</h3>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex justify-content-between align-items-center mt-0">
+
+                                                <h3 class="fs-13 mt-1 mb-2 sale_text text_center text-white">
+                                                    Sale </h3>
+                                                <h3 class="text_gold mt-1 mb-2 fs-14">NZ$23.9</h3>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-0">
+
+                                                <h3 class="fs-12 mt-1 mb-1  text_lightgrey">
+                                                    You save:</h3>
+                                                <h3 class="text_lightgrey mt-1 mb-1 fs-12">NZ$8.09 (25%)</h3>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <h3 class="fs-14 mt-1 mb-1 fw-600 text_lightblack">
+                                                    Our Price:</h3>
+                                                <h3 class="text_lightblack mt-1 mb-1 fs-14"> <s>NZ$30.70</s></h3>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <h3 class="fs-14 mt-1 mb-1  text_lightblack">
+                                                    RRP:</h3>
+                                                <h3 class="text_lightblack mt-1 mb-1 fs-14"> <s>NZ$31.99</s></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="fs-14 text_darkgrey">Quantity:</p>
+                                    <button class="btn   fs-20 mb-0 mt-0 increment text_center">-</button> <span
+                                        class="fs-13 p_1"> 1 </span> <button
+                                        class="btn   fs-20 mb-0 mt-0 text_center increment text_center">+</button>
+                                    <div>
+                                        <button class="btn btn_update mb-2 mt-4 w-100 fs-16 text-white">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offcanvas mobile -->
+    <section id="cards_mobile">
+        <div class="container">
+            <div class="overlay" id="overlay" onclick="closePopup()">
+                <div class="popup-offcanvas" onclick="event.stopPropagation();">
+                    <span class="btn close-offcanvasbtn" onclick="togglePopup()">&times;</span>
+                    <h3 class="fs-12 text_lightblack mb-0 text_center mt-0">Holistic Hair</h3>
+                    <h3 class="fs-14 mt-1 text_center text_lightgrey">Sensitive Conditioner</h3>
+                    <div class="text_center">
+                        <img src="images/syrup.png" style="height: 150px;" class="img-fluid" alt="">
+                    </div>
+                    <div class="text_center">
+                        <img src="images/popup-bottle.png" style="height: 55px;" alt="bottle" class="img-fluid">
+                        <img src="images/popup-bottle-2.png" style="height: 55px;" alt="bottle" class="img-fluid">
+                    </div>
+                    <div class="text_center">
+
+                        <p class="mt-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-star-fill text_gold" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-star text_gold" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <span class="fs-12 text_navy"><u>22 Reviews</u></span>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+
+                        <h3 class="fs-13 mt-1 mb-2 sale_text text_center text-white">
+                            Sale </h3>
+                        <h3 class="text_gold mt-1 mb-2 fs-14">NZ$23.90</h3>
+                    </div>
+                    <h3 class="fs-14 text_lightblack mt-1 mb-1"><s>RRP: NZ$31.99</s></h3>
+                    <h3 class="fs-14 text_lightblack mt-1 mb-1"><s>Our Price: NZ$30.70</s></h3>
+                    <h3 class="fs-14 text_darkgrey mb-2">Select an option:</h3>
+                    <div class=" d-flex gap-4">
+                        <div class="d-flex gap-4 shadow-sm p_1 mt-0">
+                            <h3 class="fs-12 mt-1 mb-1 text_lightgrey">
+                                250ml </h3>
+                            <h3 class="text_silver mt-1 mb-1 fs-12">NZ$23.9</h3>
+                        </div>
+                        <div class="d-flex gap-4 shadow-sm p_1 mt-0">
+                            <h3 class="fs-12 mt-1 mb-1 text_lightgrey">
+                                200ml </h3>
+                            <h3 class="text_silver mt-1 mb-1 fs-12">NZ$13.9</h3>
+                        </div>
+                    </div>
+                    <p class="fs-13 text_darkgrey">Quantity:</p>
+                    <button class="btn   fs-20 mb-0 mt-0 increment text_center">-</button> <span class="fs-13 p_1"> 1
+                    </span> <button class="btn   fs-20 mb-0 mt-0 text_center increment text_center">+</button>
+                    <div>
+                        <button class="btn btn_update mb-2 mt-4 w-100 fs-16 text-white">Update</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

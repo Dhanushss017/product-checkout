@@ -1,0 +1,276 @@
+body {
+  font-family: "Merriweather Sans", sans-serif;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1.5rem;
+}
+.shadow-light {
+  box-shadow: 0px 2px 12px 0px #00000026;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #e3e3e4;
+}
+
+#dropdown {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 0px;
+  height: 48px;
+  cursor: pointer;
+}
+#dropdown:focus-visible {
+  outline: none;
+}
+.btn_cart {
+  background-color: #59595b;
+  height: 48px;
+  border: 0px;
+  cursor: pointer;
+}
+.bonus_text {
+  background-color: #2ea37b;
+  border-radius: 15px;
+  padding: 2px;
+  width: 48px;
+  height: 19px;
+  line-height: 15px;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+.blindfull_img {
+  position: absolute;
+  right: 4%;
+  top: 3%;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.close-btn {
+  cursor: pointer;
+  border: 0px;
+}
+
+.mr_3 {
+  margin-right: 25px;
+}
+.mr_4 {
+  margin-right: 35px;
+}
+.mr_5 {
+  margin-right: 4rem;
+}
+.border_bottom-navy {
+  border-bottom: 1px solid #22686c;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.border-lightgrey {
+  border: 1px solid #dcdcdca1;
+}
+.border-navy {
+  border: 2px solid #22686c;
+}
+.bottle_img {
+  position: absolute;
+  top: 3%;
+}
+.popupCards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.new_label {
+  line-height: 35px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  top: 10%;
+  left: 4%;
+  position: absolute;
+}
+.newshampoo_label {
+  line-height: 35px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  top: 3%;
+  left: 4%;
+  position: absolute;
+}
+
+/* row column */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.col-6 {
+  flex: 1;
+  padding: 10px;
+  max-width: calc(50.3333%); /* Set maximum width for a 3-column layout */
+  box-sizing: border-box;
+}
+.shadow_dark {
+  box-shadow: 3px 3px 11px 0px #00000099;
+}
+.p_1 {
+  padding: 3px 6px;
+}
+.sale_text {
+  background-color: #f59b1b;
+  border-radius: 15px;
+  padding: 2px;
+  width: 48px;
+  height: 19px;
+  line-height: 18px;
+}
+.increment {
+  cursor: pointer;
+  border: 0px;
+  height: 25px;
+  width: 25px;
+  line-height: 17px;
+}
+.btn_update {
+  background-color: #22686c;
+  height: 48px;
+  border: 0px;
+  cursor: pointer;
+}
+.btn_secondary {
+  background-color: white;
+  height: 48px;
+  border: 0px;
+  cursor: pointer;
+}
+.gap-3 {
+  gap: 20px;
+}
+.p-2 {
+  padding: 15px;
+}
+.p-3 {
+  padding: 1rem 1.5rem;
+}
+.gap-4 {
+  gap: 35px;
+}
+/* offcanvas */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.overlay.show-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-offcanvas {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 0px;
+  margin: auto;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.show-overlay .popup-offcanvas {
+  transform: translateY(20px);
+}
+
+.close-offcanvasbtn {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  cursor: pointer;
+  font-size: 34px;
+  color: #333;
+}
+.position-relative {
+  position: relative;
+}
+.checkbox {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+.checkbox input {
+  width: 19px;
+  height: 19px;
+}
+
+@media (max-width: 767px) {
+  .col {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 479px) {
+  .col {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1199px) {
+  .card_column {
+    display: grid !important;
+    gap: 20px;
+    grid-template-columns: 1fr 0.1fr 1fr 1fr 1fr !important;
+  }
+}
